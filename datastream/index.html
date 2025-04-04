@@ -46,7 +46,7 @@ const firebaseConfig = {
   const db = firebase.database();
 
   // 👇 Set the path you want to display
-  const path = 'led/state'; // root, or 'users/', or 'users/user1', etc.
+  const path = '/'; // root, or 'users/', or 'users/user1', etc.
 
   // Realtime listener
   firebase.database().ref(path).on('value', (snapshot) => {
